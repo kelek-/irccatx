@@ -78,7 +78,7 @@ public class Config {
                 channelName = "#" + channelName;
             }
             channelPasswordMap.put(channelName, channel.getString("password", ""));
-            String fishKey = channel.getString("fish.key", "");
+            String fishKey = channel.getString("fishkey", "");
             if(!fishKey.isEmpty()){
                 Blowfish.setKey(channelName, fishKey);
             }
